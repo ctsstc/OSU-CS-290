@@ -35,7 +35,8 @@ function sortArr(comparator, array) {
     arr[ii] = hold;
   }
 
-  // O(n^2) quick'n dirty bubble sort™ w/o cache
+  // http://blog.benoitvallon.com/sorting-algorithms-in-javascript/the-bubble-sort-algorithm/
+  // O(n^2) quick'n dirty bubble sort™ w/o cache/short circuit 
   for(let i = 0; i < array.length; i++) {
     for(let ii = 1; ii < array.length; ii++) {
       let car1 = array[ii - 1];
