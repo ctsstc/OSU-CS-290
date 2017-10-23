@@ -1,0 +1,65 @@
+
+/* == Global Beautification == */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  clear: both;
+  padding: 10px;
+}
+
+section:nth-of-type(2n+1) {
+  background-color: #EEE;
+}
+section:nth-of-type(2n) {
+  background-color: #E6E6E6;
+}
+
+/* clearfix */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+fieldset>fieldset {
+  margin-bottom: 10px;
+}
+
+/* == A Majestic Table == */
+table, th, td {
+  border: 1px solid black;
+}
+
+tbody>tr>th {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*   == Extra Credit == */
+tbody>tr:nth-last-of-type(2n+1) {
+  background-color: #01fe99;
+}
+tbody>tr:nth-last-of-type(2n) {
+  background-color: #01aefe;
+}
+
+
+/* == An On-track Div  ==*/
+.outer-content {
+  width: 75%;
+  background-color: #F8C;
+  margin-top: 20px;
+  margin-left: 0px; /* This should be default for most browsers */
+  float: left;
+  padding: 10px;
+}
+
+.inner-content {
+  background-color: rgb(0, 110, 255);
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}

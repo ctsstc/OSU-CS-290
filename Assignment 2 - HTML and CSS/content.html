@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 2 - HTML &amp; CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <h1>Assignment 2 - HTML &amp; CSS</h1>
+
+    <section>
+      <h2>A Majestic Table</h2>
+
+      <table>
+        <caption>Multiplication Table</caption>
+        <!-- R1 Header -->
+        <thead>
+          <tr>
+            <th><!-- Empty --></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+        </thead>
+          <tbody>
+          <!-- R2 -->
+          <tr>
+            <th>1</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <!-- R3 -->
+          <tr>
+            <th>2</th>
+            <td>2</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+            <td>10</td>
+          </tr>
+          <!-- R4 -->
+          <tr>
+            <th>3</th>
+            <td>3</td>
+            <td>6</td>
+            <td>9</td>
+            <td>12</td>
+            <td>15</td>
+          </tr>
+          <!-- R5 -->
+          <tr>
+            <th>4</th>
+            <td>4</td>
+            <td>8</td>
+            <td>12</td>
+            <td>16</td>
+            <td>20</td>
+          </tr>
+          <!-- R6 -->
+          <tr>
+            <th>5</th>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+            <td>20</td>
+            <td>25</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Footer 1 - 2 wide</td>
+            <td colspan="4">Footer 2 - 4 wide</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>An Unorderly List</h2>
+
+      <ul>
+        <li>One Fish</li>
+        <li>Two Fish</li>
+        <li>Red Fish, Blue Fish</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>An On-track Div</h2>
+
+      <div class="outer-content">
+        <h3>Outter Content</h3>
+        <div class="inner-content">
+          <h3>Inner Conmtent</h3>
+        </div>
+      </div>
+      <div>&nbsp;</div>
+    </section>
+
+    <section>
+      <h2>Two Pals Seeking Input From Two Different Worlds</h2>
+
+      <article>
+        <h3>POST Method</h3>
+
+        <form method="POST" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+          <fieldset>
+            <legend>POST</legend>
+
+            <fieldset>
+              <input type="text" name="text_input" id="text-input"> 
+              <label for="text-input">Text Input</label><br> 
+            </fieldset>
+
+            <fieldset>
+              <input type="number" name="numerical_input" id="num-input"> 
+              <label for="num-input">Numerical Input</label><br>
+            </fieldset>
+
+            <fieldset>
+              <input type="password" name="password_input" id="pass-input"> 
+              <label for="pass-input">Password Input</label><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Candies</legend>
+
+              <input type="radio" name="candy" id="candy-snickers" value="snickers"> 
+              <label for="candy-snickers">Snickers</label><br>
+      
+              <input type="radio" name="candy" id="candy-skittles" value="skittles"> 
+              <label for="candy-skittles">Skittles</label><br>
+      
+              <input type="radio" name="candy" id="candy-mentos" value="mentos"> 
+              <label for="candy-mentos">Mentos</label><br>
+            </fieldset>
+
+            <input type="submit">
+          </fieldset>
+        </form>
+      </article>
+
+      <article>
+        <h3>GET Method</h3>
+
+        <form method="GET" action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php">
+          <fieldset>
+              <legend>GET</legend>
+      
+              <fieldset>
+                <input type="text" name="text_input" id="post-text-input"> 
+                <label for="post-text-input">Text Input</label><br> 
+              </fieldset>
+      
+              <fieldset>
+                <input type="number" name="numerical_input" id="post-num-input"> 
+                <label for="post-num-input">Numerical Input</label><br>
+              </fieldset>
+      
+              <fieldset>
+                <input type="password" name="password_input" id="post-pass-input"> 
+                <label for="post-pass-input">Password Input</label><br>
+              </fieldset>
+      
+              <fieldset>
+                <legend>Candies</legend>
+      
+                <input type="radio" name="candy" id="get-candy-snickers" value="snickers"> 
+                <label for="get-candy-snickers">Snickers</label><br>
+        
+                <input type="radio" name="candy" id="get-candy-skittles" value="skittles"> 
+                <label for="get-candy-skittles">Skittles</label><br>
+        
+                <input type="radio" name="candy" id="get-candy-mentos" value="mentos"> 
+                <label for="get-candy-mentos">Mentos</label><br>
+              </fieldset>
+      
+              <input type="submit">
+            </fieldset>
+        </form>
+      </article>
+    </section>
+
+  </body>
+</html>
