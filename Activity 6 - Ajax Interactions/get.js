@@ -31,7 +31,7 @@ class WeatherMe {
     return `${this.mapAPIURI}?q=${query}&appid=${this.apiKey}&units=${this.units}`;
   }
 
-  findWeather() {
+  findWeather(event) {
     let query = this.cityStateZip.value;
     let req = new XMLHttpRequest();
     let uri = this.buildAPIQuery(query);
@@ -48,6 +48,8 @@ class WeatherMe {
         console.error("Error in network request: " + req.statusText);
       }});
     req.send();
+
+    event.preventDefault();
   }
 
   displayTemp(temp) {

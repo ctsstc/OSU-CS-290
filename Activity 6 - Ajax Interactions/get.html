@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Weather - Activity 6 - AJAX Interactions</title>
+    <title>Weather - Activity 6 - AJAX Interactions - GET</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -19,26 +19,26 @@
       <hr>
 
       <div id='myWeather'>
-
-        <div class='row'>
-          <div class='form-group col-sm'>
-            <label for='weatherCityStateZip'>City & State Or Zip</label>
-            <input class='city-state-zip form-control' id='weatherCityStateZip' placeholder='Bend, OR --Or-- 97701'>
+        <form>
+          <div class='row'>
+            <div class='form-group col-sm'>
+              <label for='weatherCityStateZip'>City & State Or Zip</label>
+              <input class='city-state-zip form-control' id='weatherCityStateZip' placeholder='Bend, OR --Or-- 97701'>
+            </div>
           </div>
-        </div>
-          
-        <div class='row'>
-          <div class='col center'>
-            <button class="submit btn btn-block btn-primary">It's my weather and I want it Now!</button>
+            
+          <div class='row'>
+            <div class='col center'>
+              <button type='submit' class="submit btn btn-block btn-primary">It's my weather and I want it Now!</button>
+            </div>
           </div>
-        </div>
 
-        <div class='row'>
-          <div class='col'>
-            <p class='output center'></p>
+          <div class='row'>
+            <div class='col'>
+              <p class='output center'></p>
+            </div>
           </div>
-        </div>
-
+        </form>
       </div>
 
       <script src="get.js"></script>
