@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>POST Back - Activity 6 - AJAX Interactions - POST</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
   
-    <script src="post.js"></script>
+    <div class='container'>
+      <div class='row'>
+        <div class='col'>
+          <h1 class="center">POST'erama</h1>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id='babyComeBack'>
+        <form>
+          <div class='row'>
+            <div class='form-group col-sm'>
+              <label for='favoriteAnimal'>Favorite Animal?</label>
+              <input class='favorite-animal form-control' id='favoriteAnimal' placeholder='Turdlez'>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='form-group col-sm'>
+              <label for='favoriteColor'>Favorite Color?</label>
+              <input class='favorite-color form-control' id='favoriteColor' placeholder='Orange is the only correct answer here'>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='form-group col-sm'>
+              <label for='favoriteSmell'>Favorite Smell?</label>
+              <input class='favorite-smell form-control' id='favoriteSmell' placeholder='Snickers on a warm summer day on the beach with the sand between my toes.'>
+            </div>
+          </div>
+            
+          <div class='row'>
+            <div class='col center'>
+              <button type='submit' class="submit btn btn-block btn-primary">Hello? Echooo!</button>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class='col'>
+              <pre class='output'></pre>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <script src="post.js"></script>
+    </div>
   </body>
 </html>

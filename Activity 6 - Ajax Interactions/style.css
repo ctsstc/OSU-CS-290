@@ -6,6 +6,10 @@ body {
   padding-top: 20px
 }
 
+pre {
+  color: #bfff00;
+}
+
 button {
   cursor: pointer;
 }
