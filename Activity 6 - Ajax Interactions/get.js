@@ -8,14 +8,15 @@ class WeatherMe {
 
   constructor(container) {
     this.container = container;
+    this.apiKey = 'fa7d80c48643dfadde2cced1b1be6ca1';
+    this.mapAPIURI = 'http://api.openweathermap.org/data/2.5/weather';
 
     this.bindUI();
     this.UIEvents();
   }
 
   bindUI() {
-    this.city = this.container.firstByClass('city');
-    this.zip = this.container.firstByClass('zip');
+    this.cityStateZip = this.container.firstByClass('city-state-zip');
     this.submit = this.container.firstByClass('submit');
   }
 
@@ -24,15 +25,29 @@ class WeatherMe {
     this.submit.addEventListener('click', this.findWeather.bind(this));
   }
 
+  buildAPIQuery(query) {
+    return `${this.mapAPIURI}?q=${query}&appid=${this.apiKey}`;
+  }
+
   findWeather() {
-    let query = this.city.value || this.zip.value;
-    console.log("QUERY", query);
+    let query = this.cityStateZip.value;
+    let req = new XMLHttpRequest();
+    let uri = this.buildAPIQuery(query);
+
+    req.open('GET', uri, true);
+    //req.setRequestHeader('Content-Type', 'application/json');
+    req.addEventListener('load', function() {
+      if(req.status >= 200 && req.status < 400) {
+        let response = JSON.parse(req.responseText);
+        console.log(response);
+      } 
+      else {
+        console.error("Error in network request: " + req.statusText);
+      }});
+    req.send();
   }
 
 }
-
-//       req.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Corvallis,or&appid=fa7d80c48643dfadde2cced1b1be6ca1", false);
-
 
 let weatherContainer = document.getElementById('myWeather');
 new WeatherMe(weatherContainer);
