@@ -1,0 +1,10 @@
+<h1>{{method}} Request Recieved</h1>
+
+<h2>Query Data?</h2>
+<ul>
+  {{#each query}}
+    <li><b>{{@key}}</b>: {{this}}</li>
+  {{else}}
+  <li>There is no data provided in the request</li>
+  {{/each}}
+</ul>
