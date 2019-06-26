@@ -10,7 +10,7 @@
     "webpack": "node_modules/.bin/webpack --config webpack.config.js"
   },
   "dependencies": {
-    "body-parser": "~1.18.2",
+    "body-parser": "~1.19.0",
     "bootstrap": "^4.0.0-beta.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
